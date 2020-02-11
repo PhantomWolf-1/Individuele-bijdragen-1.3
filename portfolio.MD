@@ -13,4 +13,7 @@ De code die we vorige week hadden geschreven was niet al te best in combinatie m
 
 ![agenda uiterlijk](/resource/agenda.png "agenda")
 
+<img src="/resource/agenda.png" alt="agenda uiterlijk"
+	title="agendaGUI" width="150" height="100" />
+
 ---
