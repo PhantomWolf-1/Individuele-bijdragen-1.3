@@ -23,4 +23,6 @@ Het is nog niet compleet af, maar het uiterlijk is al bijna klaar. Wat er nog ge
 - de knoppen de functionaliteiten geven die ze moeten hebben. Dus wat de knoppen moeten doen.
 
 Ik moet zeggend dat na deze sessie ik het framework nu wel beter snap, nu dat ik ook informatie heb verwerkt in het framework en het werkende heb gekregen. ik vind het uiteindelijk een goede beslissing om dit framework te gebruiken.
+
 ---
+
