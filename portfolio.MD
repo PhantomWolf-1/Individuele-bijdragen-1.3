@@ -39,4 +39,19 @@ Ik moet zeggend dat na deze sessie ik het framework nu wel beter snap, nu dat ik
 ---
 ## Week 4
 
+Week 4 was niet heel erg spannend aan mijn kant qua technische bijdrage aan de proftaak. Ik ben in week 4 meer bezig geweest met het overzicht bewaren in de groep en de taken bijhouden en verdelen. Zo hadden we tussendoor een kleine vergadering waar we even de stand van zaken bespraken, zoals: hoe ver zijn we met het coderen? En wat moet er nog gebeuren, welke deadlines zijn er?
+ Wat we we nog moeten doen zijn:
+ - het plan van aanpak verder afmaken, we hadden al zes hoofdstukken en we moeten er nog 4 bijmaken.(voor P&OC)
+ - de code bekijken die Timo heeft geschreven voor het uitlezen en inladen van de Tiled map, Timo was daar al flink mee bezig geweest en ik kondigde aan dat het goed zou zijn als iedereen even de code van Timo wilt doorkijken zodat iedereen begrijpt wat Timo heeft geschreven. 
 
+
+Bij de vergadering waren er twee mensen niet, maar dat was niet echt een groot probleem. Want ik gaf aan dat het niet erg is als diegene er niet zijn maar dat ze wel tijdens de bespreking wel op discord aanwezig zijn om hun eigen inbreng te geven over de onderwerpen/taken die nog open staan en nog gedaan moeten worden. Ik gaf twee mogelijkheden aan de mensen die er waren: een discord gesprek starten zodat de andere mee kondenn praten of een document schrijven met de punten die er waren en nog gedaan moeten worden. Het document zou dan op discord gezet worden zodat de andere het konden checken en eventuele aanpassingen / toevoegingen konden melden, zo konden ze dan hun eigen inbreng geven. Iedereen vind het wel makkelijk om het via een document de sturen, dus kozen we voor keuze twee. Het was mijn verandwoordelijkheid om de andere in te lichten en dat heb ik gedaan. Zo hebben we een deadline opgesteld voor de hoofdstukken van het PVA en hebben sommige Timo zijn code doorgenomen over het inladen van de map. 
+Timo heeft het zo gemaakt dat de Tiled map, met alle kleine sprites, aan elkaar geplakt worden en zo het laag voor laag worden weer gegeven. Ook had hij al de zoem functie toe gevoegd, maar er moest nog en ding gebeuren voordat alles klaar was met het weergeven van de map. Namelijk de 'camera view', want nu kan er wel inzoemd worden maar meer in de vorm van het groter en kleiner maken en niet echt rond kijken als het ware.
+
+
+![agenda uiterlijk](/resource/schoolMap.png "agenda")
+Dit is de Tiled map die we gebruiken voor onze school simulatie.
+
+Verder was er nog een klein onderwerp over het path finding algoritme. Sjoerd heeft al wat meer kennis over dit onderwerp en wilde er al snel aan de slag er mee. Maar ik vond/vind het handiger als dat nog even kan wachten, omdat we na de vakantie het was krijgen uitgelegd waardoor iedereen het dan wat meer zou begrijpen. En dan kan iedereen zijn eigen inbreng doen inplaats van alleen maar toe kijken / door kijken wat een ander doet. 
+
+---
