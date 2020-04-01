@@ -49,9 +49,39 @@ Bij de vergadering waren er twee mensen niet, maar dat was niet echt een groot p
 Timo heeft het zo gemaakt dat de Tiled map, met alle kleine sprites, aan elkaar geplakt worden en zo het laag voor laag worden weer gegeven. Ook had hij al de zoem functie toe gevoegd, maar er moest nog en ding gebeuren voordat alles klaar was met het weergeven van de map. Namelijk de 'camera view', want nu kan er wel inzoemd worden maar meer in de vorm van het groter en kleiner maken en niet echt rond kijken als het ware.
 
 
-![agenda uiterlijk](/resource/schoolMap.png "agenda")
+![map uiterlijk](/resource/schoolMap.png "de map")
 Dit is de Tiled map die we gebruiken voor onze school simulatie.
 
 Verder was er nog een klein onderwerp over het path finding algoritme. Sjoerd heeft al wat meer kennis over dit onderwerp en wilde er al snel aan de slag er mee. Maar ik vond/vind het handiger als dat nog even kan wachten, omdat we na de vakantie het was krijgen uitgelegd waardoor iedereen het dan wat meer zou begrijpen. En dan kan iedereen zijn eigen inbreng doen inplaats van alleen maar toe kijken / door kijken wat een ander doet. 
 
 ---
+## Week 5
+
+De carnavals vakantie is voorbij, dus betekend dit dat we weer aan de bak moeten gaan met de proftaak. In de opstart kregen we veel informatie over path finding en hoe dat een beetje er uit ziet. Daarnaast hebben we ook met OGP path finding algoritmes behandeld, dus kunnen we gaan kijken hoe we path finding kunnen implementeren in ons project. 
+Maar eerst moesten we iets anders oplossen, namelijk een onenigheid over het framework. Er waren wat meningen die achtergehouden werden over het framework, met als voorbeeld: wat is het hele nut van het framework en wat bied het meer dan een standaard vorm die we gekregen hebben bij 2D? Dit was voor mij als project leider best een moeilijke situatie om op te lossen. Ik heb geprobeerd om beide manieren op een rijtje te zetten en er over te hebben wat het verschil is, misschien dat het meer helderheid geeft over het framework. Maar dat bleek niet te helpen, dus probeerde ik iets anders. Ik had geprobeerd om een voorbeeld te geven met een globale uitwerking voor beide manieren met uitleg wat er dan gebeurd en wat voor voordelen beide hebben. Dit had ook geen resultaat. we hebben een paar uur lang geprobeerd om er uit te komen, maar op een gegeven moment werd de sfeer wat minder gezellig en heb ik voor gesteld om dit uit te praten met onze tutor (Maurice). 
+Gelukkig kon onze tutor redelijk snel iets inplannen waardoor we niet al te veel tijd hoeven wachten. Hierdoor verloren we niet al te veel tijd. Maar uiteindelijk hebben we redelijk wat kostbare tijd verloren die we beter konden gebruiken. 
+Dus we hebben met onze tutor een design sessie gedaan en hebben gepraat over wat iedereen echt vind, ik zelf had al vanaf het begin veel met iedereen er over gehad of iedereen het mee eens is. In het begin was niet iedereen het eens met het framework, maar daar zijn ze uiteindelijk akkord mee gegaan. Dus ik dacht dat iedereen het goed vind en dat we er aan de slag mee konden gaan. Maar blijkbaar was het akkord maar alleen omdat de meerderheid voor was. 
+In de sessie hebben we het volgende behandeld:
+- wat we willen berijken met het project, dus wat onze gedachtes zijn over het maken van een product
+- mogelijke plus en min puten die we hadden met de samenwerking
+
+Na een paar uur de sessie gehouden te hebben zijn we er uit gekomen en kunnen we eindelijk verder met het project. Dus heb ik gelijk het groepe gevraagd waar we mee aan de slag kunnen gaan, zodat iedereen wat aan het project kan toevoegen. We hebben taken verdeeld en ik heb gelijk met iedereen duidelijk afgeproken dat wanneer er iets is waar je het niet eens bent, zeg het en laat het niet onbesproken. 
+
+Ik heb bewust de keuze gemaakt om iedereen gelijk aan het werk te hebben, zodat we de tijd die we verloren hebben mogelijk kunnen inhalen en zodat iedereen gelijk leert met het werken aan het framework.
+Ik heb de opdracht om het stukje dat Timo geschreven had, te implementeren in eht framework samen met Fabian.
+
+---
+## Week 6
+
+
+---
+## Week 7
+
+
+---
+## Week 8
+
+
+--- 
+## Week 9
+
