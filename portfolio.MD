@@ -57,7 +57,7 @@ Verder was er nog een klein onderwerp over het path finding algoritme. Sjoerd he
 ---
 ## Week 5
 
-De carnavals vakantie is voorbij, dus betekend dit dat we weer aan de bak moeten gaan met de proftaak. In de opstart kregen we veel informatie over path finding en hoe dat een beetje er uit ziet. Daarnaast hebben we ook met OGP path finding algoritmes behandeld, dus kunnen we gaan kijken hoe we path finding kunnen implementeren in ons project. 
+De carnavals vakantie is voorbij, dus betekend dit dat we weer aan de bak moeten gaan met de proftaak. In de opstart ging het over collision tussen bezoekers, hier wilden we gelijk mee gaan beginnen na de opstart.
 Maar eerst moesten we iets anders oplossen, namelijk een onenigheid over het framework. Er waren wat meningen die achtergehouden werden over het framework, met als voorbeeld: wat is het hele nut van het framework en wat bied het meer dan een standaard vorm die we gekregen hebben bij 2D? Dit was voor mij als project leider best een moeilijke situatie om op te lossen. Ik heb geprobeerd om beide manieren op een rijtje te zetten en er over te hebben wat het verschil is, misschien dat het meer helderheid geeft over het framework. Maar dat bleek niet te helpen, dus probeerde ik iets anders. Ik had geprobeerd om een voorbeeld te geven met een globale uitwerking voor beide manieren met uitleg wat er dan gebeurd en wat voor voordelen beide hebben. Dit had ook geen resultaat. we hebben een paar uur lang geprobeerd om er uit te komen, maar op een gegeven moment werd de sfeer wat minder gezellig en heb ik voor gesteld om dit uit te praten met onze tutor (Maurice). 
 Gelukkig kon onze tutor redelijk snel iets inplannen waardoor we niet al te veel tijd hoeven wachten. Hierdoor verloren we niet al te veel tijd. Maar uiteindelijk hebben we redelijk wat kostbare tijd verloren die we beter konden gebruiken. 
 Dus we hebben met onze tutor een design sessie gedaan en hebben gepraat over wat iedereen echt vind, ik zelf had al vanaf het begin veel met iedereen er over gehad of iedereen het mee eens is. In het begin was niet iedereen het eens met het framework, maar daar zijn ze uiteindelijk akkord mee gegaan. Dus ik dacht dat iedereen het goed vind en dat we er aan de slag mee konden gaan. Maar blijkbaar was het akkord maar alleen omdat de meerderheid voor was. 
@@ -68,15 +68,25 @@ In de sessie hebben we het volgende behandeld:
 Na een paar uur de sessie gehouden te hebben zijn we er uit gekomen en kunnen we eindelijk verder met het project. Dus heb ik gelijk het groepe gevraagd waar we mee aan de slag kunnen gaan, zodat iedereen wat aan het project kan toevoegen. We hebben taken verdeeld en ik heb gelijk met iedereen duidelijk afgeproken dat wanneer er iets is waar je het niet eens bent, zeg het en laat het niet onbesproken. 
 
 Ik heb bewust de keuze gemaakt om iedereen gelijk aan het werk te hebben, zodat we de tijd die we verloren hebben mogelijk kunnen inhalen en zodat iedereen gelijk leert met het werken aan het framework.
-Ik heb de opdracht om het stukje dat Timo geschreven had, te implementeren in eht framework samen met Fabian.
+Ik heb de opdracht om het stukje dat Timo geschreven had, te implementeren in het framework samen met Fabian.
 
 ---
 ## Week 6
+Na dat we eindelijk de onenigheid hebben uitgesproken met behulp van onze tutor, konden we weer verder met de proftaak. In de opstart kregen we veel informatie over path finding en hoe dat een beetje er uit ziet. Daarnaast hebben we ook met OGP path finding algoritmes behandeld, dus kunnen we gaan kijken hoe we path finding kunnen implementeren in ons project. 
+Ik heb samen met Fabian naar Timo zijn map reader en drawer gekeken, we zochten voornamelijk naar onderdelen die we konden veranderen om het in het framework te laten werken. We hebben veel overlegd en manieren gedeelt waarvan we dachten dat het zou kunnen werken. Uiteindelijk dacht ik echt te moeilijk na en was de uitwerking niet zo moeilijk of ingewikkeld, Fabian had het echt simpel bedacht waarin het goed werkt. 
+Ik had nog iedereen gevraagd hoe het nu met iedereen is, om er zeker van te zijn dat er nog geen achter gelaten meningen zijn. Met grote freugd is alles weer tot nu toe goed en wil ik het ook zo houden. 
+Daarnaast heb ik voorgesteld om een overzicht te maken van het project zodat alles weer een beetje overzichtelijker wordt met name van wat er nog moet gebeuren. De achterliggende gedachte achter dit idee was dat ik dacht dat het handig zou zijn, zeker na wat er gebeurd was binnen de groep. Toen eenmaal de lijst was opgesteld, hadden we wat taakjes verdeeld. Ik vond / vind het belangrijk dat we een tandje bij zetten met het werken aan het project, want we zijn aardig wat tijd verloren. Path findig was het hoofd onderwerp van deze dag en kwam ook aan bod bij het verdelen van de taken. Ik was/ben echt gefacineerd door path finding in het algemeen en wilde/wil daa graag aan werken, ik wist dat Sjoerd daar vele ervaring mee had en vroeg ook aan hem of ik het eerst zelf kon proberen uit te vogelen. Iedereen was het er mee eens en had hun eigen taakjes uitgekozen om te gaan doen, alleen of in duo's. 
+Na dat iedereen zijn eigen taak had gevonden, gingen we aan de slag. Ik was begonnen met de uitleg van een voorbeeld van een tower defense game op de website van RedBlobGames (https://www.redblobgames.com/pathfinding/tower-defense/). Hier staat veel informatie in om het te implementeren, maar voor mezelf had ik nog te weinig informatie om het te kunnen uitwerken. Dus heb ik gezocht naar andere uitwerking en video's over voorbeelden om meer inzicht te krijgen over hoe ik het kan uit werken. Maar na een aantal dagen kwam ik er nog steeds niet uit en heb ik Sjoerd om hulp gevraagd. Sjoerd is bezig met een eigen tower defense game waar hij dezelfde soort path finding wilt gebruiken, dus hij was bezig met een eigen uitwerking.
 
+Het idee dat ik wil uitwerken is op basis van "pijltjes" die aangeven waar je dan naar toe moet, dit is 1 van de voorbeelden op de website van RedBlobGames. Dit is de uitwerking die ik wil proberen:
+![path finding methode](/resource/pijltjes-path-finding.png "de pijtljes voor de path finding")
+
+Dus ik moet nog even geduld hebben met het uitwerken van de path finding. De reden dat ik liever even wacht is omdat Sjoerd er iets meer verstand over heeft en graag naar zijn voorbeeld wil kijken om er ook een beetje mijn eigen draai aan te geven. Ik krijg ook het gevoel dat wat hij maakt ook super werkt en daar vertrouw ik op.
 
 ---
 ## Week 7
-
+Sjoerd had voor zijn eigen game al een voorbeeld uitgewerkt die ik kon doornemen. Dit hielp ontzettend veel en op basis van het voorbeeld kon ik een idee uitwerken. 
+Mijn uitwerking was uiteindelijk goed gelukt
 
 ---
 ## Week 8
