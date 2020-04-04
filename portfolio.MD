@@ -226,8 +226,31 @@ Mijn volgende taak is de "link" leggen tussen de Simulatie en de savedData klass
 
 ---
 ## Week 8
+We kregen te horen dat de deadline voor het inleveren van het project een week verschoven wordt. Dus hebben we in deze week wat rustiger aan gedaan en ook andere school vakken de ruimte gegeven, zoals 2D-graphics of P&OC. 
+In deze week heb ik weer een overzicht gegeven over wat er nog gedaan moet worden om iedereen een ingeving te geven hoe ver we er voor staan. Ik zelf had besloten om 2D en het project te mixen in deze week, dus om en om aan beide werken. Uiteindelijk heb ik meer aan 2D gewerkt dan aan het project, maar beter iets dan niets.
+Waar ik aan de slag mee ben gegaan is de path finding, zo heb ik nog een bug weg gehaald die zorgde voor een null pointer die helemaal niet nodig zou moeten zijn. Verder ben ik niet aan het "linken" toe gekomen. Waar ik verder nog aan heb gewerkt is de agenda module, er was nog een bug waarin de selectables om een les aan te maken niet goed meer werkte met wat we hebben, want er kwam een index out of bounds uit. Deze heb ik netjes kunnen oplossen door allees wat opgehaald te scheiden, dus dat het niet alles tegelijkertijd gaat doen.
+Verder is er deze week niks speciaals gebeurt met het project. Wel heb ik continue mensen op de hoogte gehouden en gevraagd of bepaalde dingen nog waren gelukt. Zodat de communicatie niet weg valt binnen de groep. 
 
+Ik heb bewust de keuze gemaakt deze week minder aan het project te werken om andere school vakken de ruimte te geven, aangezien de deadline een week verplaatst is en volgende week beter uit komt om er aan te werken.
 
 --- 
 ## Week 9
 
+
+---
+## de andere opgaven naast de wekelijkse opdrachten
+
+### Mijn reflectie op een van de volgende statement
+- In het bedrijfsleven wordt gebruik gemaakt van JavaFX
+- In het bedrijfsleven wordt steeds meer in software gesimuleerd
+
+Voor het beantwoorden van de vraag heb ik voornamelijk deze bron gebruikt:
+https://blog.designsolutions.nl/hoe-kan-simulatie-software-bijdragen-aan-betere-innovaties
+
+Ik wil mijn reflectie geven op de statement: In het bedrijfsleven wordt steeds meer in software gesimuleerd. 
+Ik denk dat veel gesimuleerd wordt in het bedrijfsleven, om meerdere redenen:
+- om een duidelijker beeld te krijgen over hoe het eindproduct er uit komt/hoort te zien
+- voor veiligheids redenen
+- om, eventueel, geld te besparen op een project
+
+Als er wordt gesimuleerd, wordt er naar gekeken hoe het eindproduct er uit ziet en wat de functionaliteiten zijn er van. Zo wordt er een duidelijker beeld gegeven waarnaar een team werkt, dus wat een team uiteindelijk wil maken. Naast een goed beeld krijgen van eht eindproduct is het in sommige gevallen ook goed om te kijken of het eindproduct veilig genoeg is om te gebruiken, zo kunnen er eventueel problemen opgespoord worden en opnieuw ontworpen worden. Dit is super handig want dan kom je deze problemen niet tegen wanneer het product al bijna of helemaal af is. Wat voor voordeel dat met zich mee brengt is tijd. Zodra je weet waar je op moet letten en het, eventueel, aangepast plan aanhoud, wordt er tijd bespaard. Tijd is heel belangrijk, zodra je een product niet op tijd kunt leveren wordt de klant ontevreden. Maar dat niet alleen, tijd kost geld. Zodra en meer tijd nodig is, kost dit ook meer tijd. Of wanneer er meer manuren gedraait moet worden om een fout recht te zetten kost veel geld. 
