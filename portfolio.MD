@@ -85,8 +85,144 @@ Dus ik moet nog even geduld hebben met het uitwerken van de path finding. De red
 
 ---
 ## Week 7
-Sjoerd had voor zijn eigen game al een voorbeeld uitgewerkt die ik kon doornemen. Dit hielp ontzettend veel en op basis van het voorbeeld kon ik een idee uitwerken. 
-Mijn uitwerking was uiteindelijk goed gelukt
+Na lange struggles gehad te hebben met het uitzoeken van de path finding, heeft Sjoerd me super kunnen helpen met zijn uitwerking van een path finding algoritme die hij heeft gemaakt voor zijn tower defense game. Met zijn voorbeeld was ik in staat om een path finding algoritme te kunnen maken voor het project, alles is gebasseerd op de tiles en de verschillende "Directions" die een tile bevat.
+Hoe het werkt is als volgd:
+- eerst wordt de helemap in tiles bekeken en er wordt een 2D lijst (Array) gemaakt van de gehele map. Tegerlijkertijd wordt er gekeken welke van de tiles muren zijn, dus waar neit op gelopen kan worden.
+
+        for (int y = 0; y < this.mapHeight; y++) {
+            for (int x = 0; x < this.mapWidth; x++) {
+
+                Tile tile = new Tile(x * tileWidth, y * tileHeight);
+                boolean isWall = !tileMapJSONParser.isTraversable(x, y);
+
+                if (isWall) {
+                    tile.setWall(true);
+                }
+
+                this.tiles[x][y] = tile;
+            }
+        }
+
+
+- daarna wordt er een aparte methode aan geroepen die alle routes set voor elk lokaal, deze methode zoekt alle destination points(de ingangen van de lokalen en de kantine) en voegd deze toe aan een lijst met alle destination poitns voor een lokaal. Elk lokaal/ruitme heeft zijn eigen destination point Arraylist.
+
+        public void setAllRoutes() {
+
+        ArrayList<Point2D> canteen = new ArrayList<>();
+        ArrayList<Point2D> LA301 = new ArrayList<>();
+        ArrayList<Point2D> LA302 = new ArrayList<>();
+        ArrayList<Point2D> LA303 = new ArrayList<>();
+        ArrayList<Point2D> LA304 = new ArrayList<>();
+        ArrayList<Point2D> LA305 = new ArrayList<>();
+        ArrayList<Point2D> entry = new ArrayList<>();
+
+
+        for (int i = 0; i < this.objectLayer.size(); i++) {
+
+            JsonObject object = this.objectLayer.getJsonObject(i);
+
+            if (object.getString("name").equals("canteen")) {
+                int width = object.getInt("width");
+
+                while (width != 0) {
+                    width -= 16;
+                    canteen.add(new Point2D.Double(object.getInt("x") + width, object.getInt("y")));
+                }
+
+            } else if (object.getString("name").equals("LA301") || object.getString("name").equals("LA302") || object.getString("name").equals("LA303") || object.getString("name").equals("LA304")) {
+                int height = object.getInt("height");
+
+                String name = object.getString("name");
+
+                while (height != 0) {
+                    height -= 16;
+
+                    switch (name) {
+                        case "LA301":
+                            LA301.add(new Point2D.Double(object.getInt("x"), object.getInt("y") + height));
+                            break;
+
+                        case "LA302":
+                            LA302.add(new Point2D.Double(object.getInt("x"), object.getInt("y") + height));
+                            break;
+
+                        case "LA303":
+                            LA303.add(new Point2D.Double(object.getInt("x"), object.getInt("y") + height));
+                            break;
+
+                        case "LA304":
+                            LA304.add(new Point2D.Double(object.getInt("x"), object.getInt("y") + height));
+                            break;
+                    }
+                }
+            } else if (object.getString("name").equals("LA305")) {
+                int width = object.getInt("width");
+
+                while (width != 0) {
+                    width -= 16;
+                    LA305.add(new Point2D.Double(object.getInt("x") + width, object.getInt("y")));
+                }
+
+            } 
+        }
+
+        addRoute(canteen, "canteen");
+        addRoute(LA301, "LA301");
+        addRoute(LA302, "LA302");
+        addRoute(LA303, "LA303");
+        addRoute(LA304, "LA304");
+        addRoute(LA305, "LA305");
+
+       }
+
+
+- In de "addRoute" methode worden een lijst bekeken van Destination points, vanaf deze punten worden de directions geplaatst op elke tile. Elke tile heeft een hashmap met meerdere routes in zich, zodra een npc dan naar een lokaal wilt wordt de route van de tile gevraagd en komt er een richting naar voren waar ze dan naar toen moeten gaan.
+
+      public void addRoute(ArrayList<Point2D> destinations, String route) {
+
+
+        nextList = new LinkedList<Tile>();
+        for (Point2D point : destinations) {
+            int x = (int) (point.getX() / 16);
+            int y = (int) (point.getY() / 16);
+
+
+            if (isInGrid(x, y)) {
+
+                this.tiles[x][y].setDestination(true);
+                this.tiles[x][y].getDirections().put(route, Direction.ENDPOINT);
+                this.tiles[x][y].setHasBeenSet(true);
+                CheckNonDiagonalNeighbours(x, y, route);
+            }
+        }
+        
+
+        while (!nextList.isEmpty()) {
+
+            Tile checkTile = nextList.poll();
+            CheckNonDiagonalNeighbours((int) checkTile.getGridPos().getX() / 16, (int) checkTile.getGridPos().getY() / 16, route);
+        }
+
+        for (Point2D point : destinations) {
+            int x = (int) (point.getX() / 16);
+            int y = (int) (point.getY() / 16);
+
+            this.tiles[x][y].setDestination(false);
+        }
+
+        for (int yTile = 0; yTile < this.mapHeight; yTile++) {
+            for (int xTile = 0; xTile < this.mapWidth; xTile++) {
+                this.tiles[xTile][yTile].setHasBeenSet(false);
+            }
+        }
+       }
+
+Op basis van deze manier kan elke route makkelijk toegevoegd of veranderd worden. 
+Nog niet alles is compleet, zo moet alles nog via het rooster gedaan worden. Hiervoor moet de simulatie aan de data gekoppeld worden die we oplaan, du een link leggen tussen de savedData en de Simulatie klasse. Met grote dank aan Sjoerd heb ik dit kunnen maken en ik begrijp nu ook goed hoe zo'n algoritme in java uitgewerkt kan worden. Ik kwam er later diezelfde dag nog achter dat er aardig wat bugs nog in zaten en heb ik dit ook bekeken. Ik heb mijn best gedaan om alle bugs weg te werken en zorgen dat alles optimaal werkt, zeker voor de andere die dit nodig hebben om verder te gaan. Zo ben ik aangelopen op meerdere problemen met wat ik geschreven had(de code die hierboven is gegeven is de code die af is en volledig werkt). Ik had om te testen de tiles laten uit tekenen met verschillende kleurtjes per direction, zodat ik kon kijken of alles naar de goede kant wees. Maar er was blijkbaar nog iets niet goed in het algoritme, want alles wat er getekend werd waren alle tiles met de kleur zwart. Het probleem lag dat alles niet doorlopen werd, de queue werd niet verder gevuld. Nadat dit probleem was opgelost, kwam er een ander probleem, de Directions(de kleuren) waren helemaal niet goed naar waar ze horen te gaan. Dit bleek dat de soort van
+"set direction" niet goed gezet werd, ze stonden allemaal andersom. Na dit probleem waren er verder geen problemen meer en werkte alles zoals verwacht.
+
+Na dat ik dit af had, had ik dit gelijk aan de andere laten weten en gevraagd of ze het willen doorkijken van wat ik had gemaakt. De reden hierachter is dat iedereen dan op de hoogte blijft van de stand van zaken, dus hoe ver we zijn met het project en of iedereen het snapt. 
+Mijn volgende taak is de "link" leggen tussen de Simulatie en de savedData klasse, zodat we kunnen gaan kijken naar de rooster volging voor elke NPC. 
 
 ---
 ## Week 8
