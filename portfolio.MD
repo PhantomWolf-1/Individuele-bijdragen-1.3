@@ -235,7 +235,20 @@ Ik heb bewust de keuze gemaakt deze week minder aan het project te werken om and
 
 --- 
 ## Week 9
+Voor mij was dit een zware week, ik heb zo veel mogelijk aan het project kunnen werken voor zover ik kon. Na dat 2D voorbij was, had ik alle tijd voor de proftaak. De P&OC inlever opdracht kon ik al niet meer halen, want niemand had gereageerd of kon niet. 
+Maar goed over de proftaak, ik heb het volgende gedaan deze week:
+- de simulatie laten werken op de agenda, du alle data verwerkd in de simulatie.
+- de plaatsing van de NPC's veranderd, zo dat ze goed op de begin locatie staan.
+- de tile map veranderd, zodat de entry aanwezig is.
+- de data van de groups geregeld, in deze klasse stond er nog bijna niks dus ik kon hier pas gebruik van maken wanneer deze af was. 
+- alle studenten en groupen klaar staan, deze zijn nu standaard gezet. 
+- de lokalen aanpassingen kunnen nu gedaan worden.
+- de tijdsklok op een andere plek verplaatst, want deze staat nu nog niet zo goed vanwege de tile map die er overheen komt te staan.
 
+Al met al heb ik veel de laatste week nog kunnen doen voor het project. Zelf heb ik ook geprobeerd het hele groepje goed in te lichten wat er nog gedaan moet worden en wie dat gaat doen. Ik wilde niet tot de laatste dag alles gaan regelen en nog ruimte over houden voor eventuele aanpassingen. Dit was niet echt het geval. Ik had elke dag aan iedereen gevraagd of het nog gelukt was met waar diegene mee bezig was. Toch moet ik zeggen dat de communicatie verbeterd is sinds we dat probleem hebben opgelost binnen de groep, maar toch was er een puntje waar ik zelf niet echt blij mee was/ben. Namelijk dat er pas veel in de laatste 2 dagen wordt gedaan(meer coderen en naast de goede communicatie werd er nog meer met elkaar overlegd/gepraat). Als we dit tempo hadden eerder in de proftaak, hadden we meer af kunnen hebben dan dat we nu hebben denk ik. Nu hebben we niet alles af kunnen krijgen. Ik kan goed begrijpen dat door het langdurig thuis werken lastig is en dat het als vakantie aan voelt, maar het is nog geen vakantie. 
+Er waren nog een paar dingen waar we aan wilde gaan werken, maar daar hadden we geen tijd meer voor. Daarom heb ik ook voorgesteld om sommige dingen te laten voor wat je zijn en verder gaan met andere implementaties die nog gedaan moeten worden. Sommige dingen staan nog niet helemaal netjes maar daar konden we niks meer aan doen.
+
+Uiteindelijk hebben we grotendeels van het gevraagde eindproduct kunnen maken en voor wat we hebben vind ik het goed gelukt. Het belangrijkste vind ik dat we een best groot probleem (m.b.t. de samenwerking) binnen de groep hebben kunnen oplossen en met het project verder konden.
 
 ---
 ## de andere opgaven naast de wekelijkse opdrachten
@@ -254,3 +267,14 @@ Ik denk dat veel gesimuleerd wordt in het bedrijfsleven, om meerdere redenen:
 - om, eventueel, geld te besparen op een project
 
 Als er wordt gesimuleerd, wordt er naar gekeken hoe het eindproduct er uit ziet en wat de functionaliteiten zijn er van. Zo wordt er een duidelijker beeld gegeven waarnaar een team werkt, dus wat een team uiteindelijk wil maken. Naast een goed beeld krijgen van eht eindproduct is het in sommige gevallen ook goed om te kijken of het eindproduct veilig genoeg is om te gebruiken, zo kunnen er eventueel problemen opgespoord worden en opnieuw ontworpen worden. Dit is super handig want dan kom je deze problemen niet tegen wanneer het product al bijna of helemaal af is. Wat voor voordeel dat met zich mee brengt is tijd. Zodra je weet waar je op moet letten en het, eventueel, aangepast plan aanhoud, wordt er tijd bespaard. Tijd is heel belangrijk, zodra je een product niet op tijd kunt leveren wordt de klant ontevreden. Maar dat niet alleen, tijd kost geld. Zodra en meer tijd nodig is, kost dit ook meer tijd. Of wanneer er meer manuren gedraait moet worden om een fout recht te zetten kost veel geld. 
+
+
+
+### de applicaties waarvan ik denk dat er JSON gebruikt wordt 
+Ik heb de volgende drie applicaties gevonden waarvan ik denk dat er JSON gebruikt wordt:
+- buienradar
+- rtl Nieuws
+- Media Markt
+
+De reden waarom ik denk dat deze applicaties/websites JSON gebruiken, is omdat ik kan zien dat er letterlijk JSON gebruikt wordt of dat, wat in de files staat, op JSON lijkt, van wat ik kan zien in de source van de website (F12). 
+Een andere reden dat ik kan geven is de manier waarop de data opgeslagen wordt in een JSON file. In mijn ogen is de dage uit een JSON file makkelijk te lezen en op te slaan, waardoor deze applicaties/websites makkelijk hun informatie kunnen verkrijgen.
